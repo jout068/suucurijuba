@@ -1,51 +1,64 @@
 .. include:: special.rst
 
-.. _modulo_esquenta_zero:
+.. _modulo_esquenta_um:
 
-Problemas para o Dojo de Aquecimento
+Problemas para o Dojo de Aquecimento 1
 ====================================
 
-1. Quando dormir
+1. Multiplicando as palavras
 -------------------------
 
-O parâmetro trabalho é True se for um dia de trabalho e o parâmetro férias é True se estivermos de férias.
-Nós dormimos se não for um dia de trabalho ou estamos de férias. Retorne True se dormirmos até tarde..
+Dada uma string e um int n não negativo, diremos que a frente da string são os primeiros 3 caracteres,
+ou o que estiver lá se a string for menor que 3. Retorna n cópias da frente;
+
+frente_vezes('Chocolate', 2) → 'ChoCho'
+frente_vezes('Chocolate', 3) → 'ChoChoCho'
+frente_vezes('Abc', 3) → 'AbcAbcAbc'
 
 .. raw:: html
 
   <div id="dojo_0"></div>
   <script type="text/python">
       from ScriptWidget import ScriptBuilder
-      sw2 = ScriptBuilder("dojo_esquenta_0.py", height=200, title="dojo esquenta 0")
+      sw2 = ScriptBuilder("dojo_esquenta_1.py", height=200, title="dojo esquenta 0")
   </script>
 
 
-2. Macacos encrenqueiros
+2. Exclui letra
 --------------------------------------------------
 
-Temos dois macacos, a e b, e os parâmetros a_sorri e b_sorri indicam se cada um está sorrindo.
-Estamos em apuros se ambos estiverem sorrindo ou se nenhum deles estiver sorrindo.
-Retorne True se estivermos com problemas..
+Dada uma string, retorne uma nova string feita de todos os outros caracteres começando com
+o primeiro, então "Hello" produz "Hlo".
+
+string_palavra('Hello') → 'Hlo'
+string_palavra('Hi') → 'H'
+string_palavra('Heeololeo') → 'Hello'
+
+
 
 .. raw:: html
 
   <div id="dojo_1"></div>
 
-3. Soma ou dobro
+3. Número Repetido
 ---------------------------------
 
-Dados dois valores int, retorne sua soma. Caso os dois valores sejam iguais, retorne o dobro da soma.
+Dado um array de ints, retorne a quantidade de números de 9 no array.
+
+conta_numero([1, 2, 9]) → 1
+conta_numero([1, 9, 9]) → 2
+conta_numero([1, 9, 9, 3, 9]) → 3
 
 .. raw:: html
 
   <div id="dojo_2"></div>
 
 
-4. Diferença para 21
+4. Sequência de Números
 ------------------------------------------------------------------
 
-Dado um int n, retorne a diferença absoluta entre n e 21,
-exceto retorne o dobro da diferença absoluta se n for maior que 21..
+Dada uma matriz de ints, retorne True se a sequência de números 1, 2, 3 aparecer
+na matriz em algum lugar.
 
 .. raw:: html
 
