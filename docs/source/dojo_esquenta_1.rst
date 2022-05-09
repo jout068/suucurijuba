@@ -24,15 +24,11 @@ frente_vezes('Abc', 3) → 'AbcAbcAbc'
   </script>
 
 
-2. Exclui letra
+2. Criando uma nova palavra
 --------------------------------------------------
 
 Dada uma string, retorne uma nova string feita de todos os outros caracteres começando com
 o primeiro, então "Hello" produz "Hlo".
-
-string_palavra('Hello') → 'Hlo'
-string_palavra('Hi') → 'H'
-string_palavra('Heeololeo') → 'Hello'
 
 
 
@@ -45,31 +41,32 @@ string_palavra('Heeololeo') → 'Hello'
 
 Dado um array de ints, retorne a quantidade de números de 9 no array.
 
-conta_numero([1, 2, 9]) → 1
-conta_numero([1, 9, 9]) → 2
-conta_numero([1, 9, 9, 3, 9]) → 3
-
 .. raw:: html
 
   <div id="dojo_2"></div>
 
 
-4. Sequência de Números
-------------------------------------------------------------------
 
-Dada uma matriz de ints, retorne True se a sequência de números 1, 2, 3 aparecer
-na matriz em algum lugar.
+Dada uma string, retorne a contagem do número de vezes que uma substring
+de comprimento 2 aparece na string e também como os últimos 2 caracteres da
+string, então "hixxxhi" produz 1 (não contaremos a substring final).
+
+
+4. É ou não é
+------------------------------------------------------------------
+Dado um array de ints, retorne True se um dos primeiros 4 elementos do array for 9.
+O comprimento do array pode ser menor que 4.
+
 
 .. raw:: html
 
   <div id="dojo_3"></div>
 
-5. Papagaio Tagarela
+5. Sequência de Números
 ---------------------------------
 
-Temos um papagaio falando alto. O parâmetro "hora" é a hora atual no intervalo 0..23.
-Estamos com problemas se o papagaio estiver falando e a hora for antes das 7 ou depois das 20.
-Retorne True se estivermos com problemas..
+Dada uma matriz de ints, retorne True se a sequência de números 1, 2, 3 aparecer
+na matriz em algum lugar.
 
 .. raw:: html
 

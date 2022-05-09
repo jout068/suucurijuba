@@ -46,7 +46,7 @@ assert multiplicar_o_inicio('Chocolate', 3) == ('ChoChoCho')
 
 _SET1_ = {
     "script_name": "dojo_1",    "script_div_id": "dojo_1",
-    "height": 200, "title": "exclui letra"
+    "height": 200, "title": "Inventando uma nova palavra"
 }  # _SEC_
 
 def exclui_letra(palavra):
@@ -82,7 +82,26 @@ assert conta_numero([1, 9, 9]) == 2
 
 _SET3_ = {
     "script_name": "dojo_3",    "script_div_id": "dojo_3",
-    "height": 200, "title": "Sequẽncia de Números"
+    "height": 200, "title": "É ou não é"
+}  # _SEC_
+def verifica_nove(matriz):
+    """Retorna True se um dos quatros primeiros numeros da matriz for nove
+    """
+    fim = len(matriz)
+    if fim > 4:
+        fim = 4
+
+        for i in range(fim):
+            if matriz[i] == 9:
+                return True
+        return False
+
+assert verifica_nove([1, 2, 9, 3, 4]) == True
+assert verifica_nove([1, 2, 3, 4, 9]) == False
+
+_SET4_ = {
+    "script_name": "dojo_4",    "script_div_id": "dojo_4",
+    "height": 200, "title": "Sequencia de numero"
 }  # _SEC_
 def sequencia_numero(matriz):
     """Retorne True caso a sequência de números 1, 2, 3 aparecer na matriz
@@ -92,24 +111,9 @@ def sequencia_numero(matriz):
             return True
     return False
 
+
 assert sequencia_numero([1, 1, 2, 3, 1]) == True
 assert sequencia_numero([1, 1, 2, 4, 1]) == False
-
-_SET4_ = {
-    "script_name": "dojo_4",    "script_div_id": "dojo_4",
-    "height": 200, "title": "Papagaio Tagarela"
-}  # _SEC_
-def papagaio_tagarela(falando, hora):
-    """Retorna se Papagaio Tagarela cria encrenca.
-    """
-    _ = falando, hora
-    encrenca = True
-    return encrenca
-
-
-assert papagaio_tagarela(True, 9) is False
-assert papagaio_tagarela(False, 21) is False
-assert papagaio_tagarela(True, 6) is True
 
 _SET5_ = {
     "script_name": "dojo_5",    "script_div_id": "dojo_5",
