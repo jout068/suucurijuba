@@ -72,21 +72,21 @@ na matriz em algum lugar.
 
   <div id="dojo_4"></div>
 
-6. Dezena ou Soma
+6. Explosão de Letras
 ---------------------------------
 
-Dados 2 inteiros, a e b, retorne True se um deles for 10 ou se sua soma for 10.
+Dada uma string não vazia como "Code", retorne uma string como "CCoCodCode".
 
 .. raw:: html
 
   <div id="dojo_5"></div>
 
-7. Em torno de Cem
+7. Posições Iguais
 ---------------------------------
 
-Dado um int n, retorne True se estiver à distância menor que 10 do valor 100.
-Nota: abs(num) calcula o valor absoluto de um número.
-
+Dadas 2 strings, a e b, retorne o número de posições onde elas contêm a mesma substring de comprimento 2.
+Portanto, "xxcaazz" e "xxbaaz" resultam em 3, já que as substrings "xx", "aa" e "az" aparecem no mesmo
+lugar em ambas as strings.
 .. raw:: html
 
   <div id="dojo_6"></div>

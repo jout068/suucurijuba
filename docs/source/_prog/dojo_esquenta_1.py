@@ -46,7 +46,7 @@ assert multiplicar_o_inicio('Chocolate', 3) == ('ChoChoCho')
 
 _SET1_ = {
     "script_name": "dojo_1",    "script_div_id": "dojo_1",
-    "height": 200, "title": "Inventando uma nova palavra"
+    "height": 200, "title": "Criando uma nova palavra"
 }  # _SEC_
 
 def exclui_letra(palavra):
@@ -117,39 +117,42 @@ assert sequencia_numero([1, 1, 2, 4, 1]) == False
 
 _SET5_ = {
     "script_name": "dojo_5",    "script_div_id": "dojo_5",
-    "height": 200, "title": "Dezena ou Soma"
+    "height": 200, "title": "Explosão de letras"
 }  # _SEC_
-def dezena_soma(um_numero, outro_numero):
-    """Retorna se um deles é uma dezena ou a soma é.
-    """
-    resultado = um_numero, outro_numero
-    return resultado
+def explosao_letras(palavra):
+
+  palavraFinal = ""
+
+  for i in range(len(palavra)):
+    palavraFinal = palavraFinal + str[:i+1]
+  return palavraFinal
 
 
-assert dezena_soma(10, 4) is True
-assert dezena_soma(3, 7) is True
-assert dezena_soma(2, 4) is False
+assert explosao_letras('Code') == ('CCoCodCode')
+assert explosao_letras('abc') == ('aababc')
+assert explosao_letras('ab') == ('aab')
 
 _SET6_ = {
     "script_name": "dojo_6",    "script_div_id": "dojo_6",
-    "height": 200, "title": "Em torno de Cem"
+    "height": 200, "title": "Posições Iguais"
 }  # _SEC_
-def aproximadamente_cem(valor):
-    """Retorna se o número está nas proximidades do número cem.
-    """
-    resultado = valor
-    return resultado
+def verifica_posicao(palavra1, palavra2):
+    posicaoIgual = 0
+
+    for i in range(len(palavra1) - 1):
+        if palavra1[i:i + 2] == palavra2[i:i + 2]:
+            posicaoIgual = posicaoIgual + 1
+    return posicaoIgual
 
 
-assert aproximadamente_cem(109) is True
-assert aproximadamente_cem(92) is True
-assert aproximadamente_cem(89) is False
-
+assert verifica_posicao('xxcaazz', 'xxbaaz') == 3
+assert verifica_posicao('abc', 'abc') == 2
+assert verifica_posicao('abc', 'axc') == 0
 _SET7_ = {
     "script_name": "dojo_7",    "script_div_id": "dojo_7",
-    "height": 200, "title": "Negatividade"
+    "height": 200, "title": "Posições Iguais"
 }  # _SEC_
-def negatividade(um_numero, outro_numero, negativo):
+def posicao_igual(um_numero, outro_numero, negativo):
     """Retorna se apenas um é negativo ou se os dois são.
     """
     resultado = um_numero, outro_numero, negativo
