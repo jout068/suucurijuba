@@ -34,19 +34,18 @@ def multiplicar_o_inicio(inicio, n):
     if inicio_len > len(inicio):
         inicio_len = len(inicio)
     palavraFinal = str[:inicio_len]
-
     resultado = ""
     for i in range(n):
         resultado = resultado + palavraFinal
     return resultado
 
 assert multiplicar_o_inicio('Chocolate', 2) == ('ChoCho')
-assert multiplicar_o_inicio('Chocolate', 3) == ('ChoChoCho')
+assert multiplicar_o_inicio('Chocolate', 3) == ('ChoChoC0ho')
 
 
 _SET1_ = {
     "script_name": "dojo_1",    "script_div_id": "dojo_1",
-    "height": 200, "title": "Criando uma nova palavra"
+    "height": 200, "title": "criando uma nova palavra"
 }  # _SEC_
 
 def exclui_letra(palavra):
@@ -65,15 +64,15 @@ assert exclui_letra('Heeololeo') == ("Hello")
 
 _SET2_ = {
     "script_name": "dojo_2",    "script_div_id": "dojo_2",
-    "height": 200, "title": "Contando os Números"
+    "height": 200, "title": "numero repetido"
 }  # _SEC_
 def conta_numero(numero):
     """Verifica se há o número 9 nos quatro primeiro elemento do array.
     """
+    conta = 0
     for num in numero:
         if num == 9:
             conta = conta + 1
-
     return conta
 
 
@@ -159,9 +158,6 @@ def posicao_igual(um_numero, outro_numero, negativo):
     return resultado
 
 
-assert negatividade(-2, -2, False) is False
-assert negatividade(-2, -2, True) is True
-assert negatividade(-2, 3, False) is True
 
 _SET8_ = {
     "script_name": "dojo_8",    "script_div_id": "dojo_8",

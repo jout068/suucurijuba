@@ -3,10 +3,10 @@
 .. _modulo_esquenta_um:
 
 Problemas para o Dojo de Aquecimento 1
-====================================
+======================================
 
 1. Multiplicando as palavras
--------------------------
+----------------------------
 
 Dada uma string e um int n não negativo, diremos que a frente da string são os primeiros 3 caracteres,
 ou o que estiver lá se a string for menor que 3. Retorna n cópias da frente;
