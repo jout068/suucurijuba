@@ -87,6 +87,7 @@ Dada uma string não vazia como "Code", retorne uma string como "CCoCodCode".
 Dadas 2 strings, a e b, retorne o número de posições onde elas contêm a mesma substring de comprimento 2.
 Portanto, "xxcaazz" e "xxbaaz" resultam em 3, já que as substrings "xx", "aa" e "az" aparecem no mesmo
 lugar em ambas as strings.
+
 .. raw:: html
 
   <div id="dojo_6"></div>

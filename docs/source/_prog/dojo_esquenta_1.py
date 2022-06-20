@@ -33,14 +33,14 @@ def multiplicar_o_inicio(inicio, n):
     inicio_len = 3
     if inicio_len > len(inicio):
         inicio_len = len(inicio)
-    palavraFinal = str[:inicio_len]
+    palavraFinal = inicio[:inicio_len]
     resultado = ""
     for i in range(n):
         resultado = resultado + palavraFinal
     return resultado
 
 assert multiplicar_o_inicio('Chocolate', 2) == ('ChoCho')
-assert multiplicar_o_inicio('Chocolate', 3) == ('ChoChoC0ho')
+assert multiplicar_o_inicio('Chocolate', 3) == ('ChoChoCho')
 
 
 _SET1_ = {
@@ -66,18 +66,18 @@ _SET2_ = {
     "script_name": "dojo_2",    "script_div_id": "dojo_2",
     "height": 200, "title": "numero repetido"
 }  # _SEC_
-def conta_numero(numero):
+def numero_repetido(numero):
     """Verifica se há o número 9 nos quatro primeiro elemento do array.
     """
-    conta = 0
-    for num in numero:
-        if num == 9:
-            conta = conta + 1
-    return conta
+    # conta = 0
+    # for num in numero:
+    #     if num == 9:
+    #         conta = conta + 1
+    # return conta
 
 
-assert conta_numero([1, 9, 9, 3, 9]) == 3
-assert conta_numero([1, 9, 9]) == 2
+assert numero_repetido([1, 9, 9, 3, 9]) == 3
+assert numero_repetido([1, 9, 9]) == 2
 
 _SET3_ = {
     "script_name": "dojo_3",    "script_div_id": "dojo_3",
@@ -123,7 +123,7 @@ def explosao_letras(palavra):
   palavraFinal = ""
 
   for i in range(len(palavra)):
-    palavraFinal = palavraFinal + str[:i+1]
+    palavraFinal = palavraFinal + palavra[:i+1]
   return palavraFinal
 
 

@@ -7,7 +7,6 @@ _SET0_ = {
 
 def ordena_lista(lista, tipo):
     """Ordena uma lista.
-
     """
     lista_ordenada = []
     return lista_ordenada
@@ -42,6 +41,12 @@ def conte_as_vogais(frase):
     """Conte as vogais.
     """
     vogais = 0
+    for i in range(len(frase)):
+        if frase[i] in 'a,e,i,o,u':
+            vogais = vogais + 1
+    print(vogais)
+    return vogais
+
     return vogais
 
 
