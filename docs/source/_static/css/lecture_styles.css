@@ -79,6 +79,9 @@
   display: inline-flex;
 }
 
+.texto{
+    font-size: 30px;
+}
 .diagram-menu {
   vertical-align: top;
   width: 100%;
